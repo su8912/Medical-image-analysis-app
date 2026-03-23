@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F1F1">
+
+    <!-- Top Section (App Title) -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#FACCCC"
+        android:backgroundTint="#FAEFEF"
+        android:text="Brain Tumor Detector"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Main Content (Center Logo + Button) -->
+
+    <!-- Bottom Footer -->
+
+    <LinearLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Small Logo -->
+        <ImageView
+            android:id="@+id/small_logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="App Logo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pogo" />
+
+        <!-- Enter App Button -->
+        <Button
+            android:id="@+id/next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:elevation="4dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Enter App"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="#FDEDED"
+        android:backgroundTint="#FADFDF"
+        android:text="Created by Group 26"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+
